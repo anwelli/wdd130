@@ -39,8 +39,8 @@ aside {
   background-color: #eee;
   color: #333;
   text-align: center;
+  position: relative;
  
-
 }
 aside img {
   width: 200px;
@@ -48,8 +48,7 @@ aside img {
 }
 aside h2 {
   position: absolute;
-  top: px;
-  left: 180px;
+  left: 164px;
 
 }
 main img {
@@ -64,7 +63,8 @@ footer {
   border-top: 1px solid #000;
   text-align: center;
 }
-/* class selector */
+
+/* Class Selectors */
 .box {
   margin: 1em;
   border: 1px solid rgba(0, 0, 0, 0.2);
