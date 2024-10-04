@@ -1,0 +1,31 @@
+:root {
+    --heading-background-color: #3498DB;
+    --heading-text-color: #333;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgba(0,0,0,0.1);
+  }
+  
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    padding: var(--padding);
+  }
+
+  img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+  }
+  
