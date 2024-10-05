@@ -1,3 +1,8 @@
+/* styles/rafting.css */
+
+/* Google Font API references */
+@import url('(link unavailable)');
+@import url('(link unavailable)');
 
 :root {
     --primary-color: #3498db;
@@ -37,8 +42,8 @@ nav a {
 .hero {
     position: relative;
     background-image: url('../images/hero-image.jpg');
-    background-size: cover;
-    height: 500px;
+    display: block;
+    height: auto;
     width: 100%;
 }
 
