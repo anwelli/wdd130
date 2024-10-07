@@ -1,6 +1,8 @@
 /* styles/rafting.css */
 
+
 /* Google Font API references */
+
 
 :root {
     --primary-color: #3498db;
@@ -9,6 +11,7 @@
     --text-color: #333;
 }
 
+
 body {
   font-family: "Roboto", system-ui;
   font-weight: 400;
@@ -16,27 +19,94 @@ body {
     padding: 0;
 }
 
+
 header {
     background-color: var(--primary-color);
-    padding: 20px;
+    padding: 1%;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
+
+
+
 
 header img {
     width: 100px;
-    height: 100px;
-    margin: 20px;
+    height: auto;
+    margin: 10px;
+    border-radius: 50%;
 }
 
+
+
+
 nav {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
 
 nav a {
     color: #fff;
     text-decoration: none;
     margin: 20px;
+    font-size: 18px;
+    transition: color 0.2s ease;
 }
+
+nav a:hover {
+    color: #ccc;
+  }
+  
+  nav a.active {
+    color: var--background-color;
+  }
+
+  
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history h2 {
+    margin-bottom: 1em;
+    color: var(--primary-color);
+    font-size: 24px;
+  }
+  
+  .history p {
+    margin-bottom: 2em;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .history img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
 
 .hero {
     position: relative;
@@ -46,16 +116,19 @@ nav a {
     width: 100%;
 }
 
+
 .hero h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 5%;
+    left: 40%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 100;
 
+
 }
+
 
 .hero article {
     position: absolute;
@@ -66,6 +139,7 @@ nav a {
     border-radius: 10px;
 }
 
+
 .hero article img {
     float: right;
     width: 100px;
@@ -73,13 +147,76 @@ nav a {
     margin: 10px;
 }
 
+
 main {
     max-width: 800px;
     margin: 40px auto;
 }
+
 
 section {
     background-color: var(--background-color);
     padding: 20px;
     border-radius: 10px;
 }
+
+
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    gap: 20px; /* Add 20px gap between items */
+  }
+  
+  .adventures figure {
+    margin: 0;
+    width: 18%;
+    
+  }
+  
+  .adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .adventures figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--text-color);
+  }
+  
+  
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #f0f0f0;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    gap: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    text-align: center;
+    margin-right: auto;
+    flex: 1;
+}
+  
+  .social-links {
+    display: flex;
+    gap: 5px; 
+  }
+  
+  .social-links a {
+    margin: 0;
+  }
+  
+  .social-links img {
+    width: 30px;
+    height: auto;
+  }
+  
