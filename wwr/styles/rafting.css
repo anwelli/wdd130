@@ -73,7 +73,7 @@ nav a:hover {
   }
   
   nav a.active {
-    color: var--background-color;
+    color: #3498db;
   }
 
   
@@ -193,7 +193,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background-color: #f0f0f0;
+    background-color: #3498db;
     align-items: center;
     border-top: 1px solid #ddd;
     gap: 20px;
