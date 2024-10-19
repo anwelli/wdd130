@@ -288,3 +288,23 @@ footer p {
   margin-right: auto;
   flex: 1;
 }
+
+/* Employee Profiles */
+#employee-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#employee-profiles figure {
+  flex-basis: 25%; /* Adjust width */
+  margin: 20px;
+  text-align: center;
+}
+
+#employee-profiles img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
