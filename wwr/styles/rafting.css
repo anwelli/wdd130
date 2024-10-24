@@ -1,5 +1,4 @@
 
-
 /* Google Font API references */
 
 :root {
@@ -9,7 +8,7 @@
 --text-color: #333;
 }
 
-* {
+*{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -18,8 +17,6 @@ box-sizing: border-box;
 body {
 font-family: "Roboto", system-ui;
 font-weight: 400;
-margin: 0;
-padding: 0;
 line-height: 1.5;
 }
 
@@ -33,43 +30,9 @@ align-items: center;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header img {
-width: 100px;
-height: auto;
-margin: 10px;
-border-radius: 50%;
-}
-
 nav {
 display: flex;
 justify-content: space-between;
-}
-
-nav ul {
-list-style: none;
-margin: 0;
-padding: 0;
-display: flex;
-}
-
-nav li {
-margin-right: 20px;
-}
-
-nav a {
-color: #fff;
-text-decoration: none;
-margin: 20px;
-font-size: 18px;
-transition: color 0.2s ease;
-}
-
-nav a:hover {
-color: #ccc;
-}
-
-nav a.active {
-color: #3498db;
 }
 
 main {
@@ -84,33 +47,23 @@ border-radius: 10px;
 margin-bottom: 20px;
 }
 
-.history {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 2em;
-background-color: var(--background-color);
-border-radius: 10px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.history,
+.adventures,
+.trips-grid,
+.call-to-action,
+.newsletter-signup {
+background-color: #f7f7f7;
+padding: 20px;
+border: 1px solid #ddd;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.history h2 {
-margin-bottom: 1em;
-color: var(--primary-color);
-font-size: 24px;
-}
-
-.history p {
-margin-bottom: 2em;
-color: var(--text-color);
-font-size: 18px;
-}
-
-.history img {
-width: 100%;
-height: auto;
-margin: 20px 0;
-border-radius: 10px;
+.history h2,
+.adventures h2,
+.trips-grid h2,
+.call-to-action h2,
+.newsletter-signup h2 {
+margin-bottom: 10px;
 }
 
 .hero {
@@ -131,39 +84,6 @@ font-size: 40px;
 font-weight: 100;
 }
 
-.hero article {
-position: absolute;
-bottom: 20px;
-left: 20px;
-background-color: rgba(255, 255, 255, 0.5);
-padding: 20px;
-border-radius: 10px;
-}
-
-.hero article img {
-float: right;
-width: 100px;
-height: 100px;
-margin: 10px;
-}
-
-.hero img {
-display: block;
-width: 100%;
-height: auto;
-}
-
-.adventures {
-padding: 20px;
-background-color: #f0f0f0;
-border-top: 1px solid #ddd;
-}
-
-.adventures h2 {
-text-align: center;
-margin-bottom: 20px;
-}
-
 .adventure-gallery {
 display: flex;
 justify-content: space-around;
@@ -180,29 +100,6 @@ width: 100%;
 height: auto;
 object-fit: cover;
 border-radius: 10px;
-}
-
-.adventure figcaption {
-font-size: 20px;
-font-weight: bold;
-margin-top: 10px;
-}
-
-figure {
-border: thin #c0c0c0 solid;
-display: flex;
-flex-flow: column;
-padding: 5px;
-max-width: 220px;
-margin: auto;
-}
-
-figcaption {
-background-color: #222;
-color: #fff;
-font: italic smaller sans-serif;
-padding: 3px;
-text-align: center;
 }
 
 footer {
@@ -222,141 +119,21 @@ margin-right: auto;
 flex: 1;
 }
 
-/* Employee Profiles */
-
-#employee-profiles {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-align-items: center;
-flex-direction: row;
-}
-
-#employee-profiles figure {
-flex-basis: 20%;
-margin: 20px;
-text-align: center;
-}
-
-#employee-profiles img {
-width: 150px;
-height: 150px;
-object-fit: cover;
-border-radius: 50%;
-}
-
-/* Meet Our Team Styles */
-
-.meet-our-team {
-text-align: center;
-margin-bottom: 40px;
-}
-
-.meet-our-team h2 {
-margin-bottom: 10px;
-}
-
-/* Responsive Design */
-
-@media only screen and (max-width: 768px) {
-#employee-profiles {
-flex-direction: column;
-}
-#employee-profiles figure {
-margin: 20px 0;
-}
-}
-
-/* Trips Page */
-
-.trips-grid {
-display: grid;
-grid-template-columns: 1fr;
-gap: 20px;
-}
-
-.call-to-action {
-grid-column: 1 / -1;
-background-color: #f7f7f7;
-padding: 20px;
-border: 1px solid #ddd;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.trip-descriptions {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-}
-
-.trip {
-background-color: #f7f7f7;
-padding: 20px;
-border: 1px solid #ddd;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.trip img {
-width: 100%;
-height: 150px;
-object-fit: cover;
-border-radius: 10px;
-}
-
-.trip-table {
-grid-column: 1 / -1;
-}
-
-table {
-width: 100%;
-border-collapse: collapse;
-}
-
-th, td {
-border: 1px solid #ddd;
-padding: 10px;
-text-align: left;
-}
-
-/* Newsletter Signup */
-
-.newsletter-signup {
-background-color: #f7f7f7;
-padding: 20px;
-border: 1px solid #ddd;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.newsletter-signup form {
-display: flex;
-flex-direction: column;
-}
-
-.newsletter-signup label {
-margin-bottom: 10px;
-}
-
-.newsletter-signup input {
-padding: 10px;
-margin-bottom: 20px;
-border: 1px solid #ccc;
-}
-
 /* Responsive Design */
 
 @media only screen and (max-width: 768px) {
 /* Adjust layout for smaller screens */
-.trips-grid {
-grid-template-columns: 1fr;
-}
-.trip-descriptions {
-grid-template-columns: 1fr;
-}
 .adventure-gallery {
 flex-direction: column;
 }
 .adventure {
 margin: 20px 0;
+}
+.trips-grid {
+grid-template-columns: 1fr;
+}
+.trip-descriptions {
+grid-template-columns: 1fr;
 }
 }
 
@@ -366,80 +143,4 @@ color: #fff;
 padding: 10px 20px;
 border: none;
 border-radius: 5px;
-}
-
-/* Grid Content Styles */
-
-.home-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-width: 100%;
-}
-
-.grid-content {
-grid-column: 1 / -1;
-}
-
-.grid-item {
-background-color: #f7f7f7;
-padding: 20px;
-border: 1px solid #ddd;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 100%;
-}
-
-.grid-item img {
-width: 100%;
-height: 150px;
-object-fit: cover;
-border-radius: 10px;
-}
-
-.grid-item h3 {
-margin-bottom: 10px;
-}
-
-.grid-item p {
-margin-bottom: 20px;
-}
-
-
-/* Call-to-Action Styles */
-
-.call-to-action {
-background-color: #f7f7f7;
-padding: 20px;
-border: 1px solid #ddd;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 100%;
-}
-
-.call-to-action h2 {
-margin-bottom: 10px;
-}
-
-.call-to-action p {
-margin-bottom: 20px;
-}
-
-.call-to-action .btn {
-background-color: #2196f3;
-color: #fff;
-padding: 10px 20px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
-
-/* Responsive Design */
-
-@media only screen and (max-width: 768px) {
-/* Adjust layout for smaller screens */
-.home-grid {
-grid-template-columns: 1fr;
-}
-.grid-item {
-margin-bottom: 20px;
-}
 }
