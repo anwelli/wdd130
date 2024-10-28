@@ -214,22 +214,6 @@ font-size: 40px;
 font-weight: 100;
 }
 
-.hero article {
-position: absolute;
-bottom: 20px;
-left: 20px;
-background-color: rgba(255, 255, 255, 0.5);
-padding: 20px;
-border-radius: 10px;
-}
-
-.hero article img {
-float: right;
-width: 100px;
-height: 100px;
-margin: 10px;
-}
-
 .hero img {
 display: block;
 width: 100%;
@@ -490,34 +474,7 @@ margin-bottom: 20px;
 
 /* Call-to-Action Styles */
 
-.call-to-action {
-background-color: #f7f7f7;
-padding: 20px;
-border: 1px solid #ddd;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 100%;
-}
-
-.call-to-action h2 {
-margin-bottom: 10px;
-}
-
-.call-to-action p {
-margin-bottom: 20px;
-}
-
-.call-to-action .btn {
-background-color: #2196f3;
-color: #fff;
-padding: 10px 20px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
-
-/* Responsive Design */
-
-@media only screen and (max-width: 768px) {
+.call-to-a
 /* Adjust layout for smaller screens */
 .home-grid {
 grid-template-columns: 1fr;
@@ -525,7 +482,7 @@ grid-template-columns: 1fr;
 .grid-item {
 margin-bottom: 20px;
 }
-
-
-
- remove duplicate do not modify
+iframe {
+    border: 1px solid black;
+    width: 100%; /* takes precedence over the width set with the HTML width attribute */
+  }
