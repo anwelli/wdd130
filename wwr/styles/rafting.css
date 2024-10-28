@@ -33,7 +33,7 @@
   }
   
   h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
   
   /* Paragraphs */
@@ -195,6 +195,47 @@ header nav a {
     }
   }
  
+   
+.hero {
+position: relative;
+background-image: url('../images/hero-image.jpg');
+display: block;
+height: auto;
+width: 100%;
+}
+
+.hero h1 {
+position: absolute;
+top: 5%;
+left: 40%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 40px;
+font-weight: 100;
+}
+
+.hero article {
+position: absolute;
+bottom: 20px;
+left: 20px;
+background-color: rgba(255, 255, 255, 0.5);
+padding: 20px;
+border-radius: 10px;
+}
+
+.hero article img {
+float: right;
+width: 100px;
+height: 100px;
+margin: 10px;
+}
+
+.hero img {
+display: block;
+width: 100%;
+height: auto;
+}
+
 .adventures {
 padding: 20px;
 background-color: #f0f0f0;
@@ -473,8 +514,18 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 }
-iframe {
-    border: 1px solid black;
-    width: 100%; /* takes precedence over the width set with the HTML width attribute */
-  }
-  
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+/* Adjust layout for smaller screens */
+.home-grid {
+grid-template-columns: 1fr;
+}
+.grid-item {
+margin-bottom: 20px;
+}
+
+
+
+ remove duplicate do not modify
